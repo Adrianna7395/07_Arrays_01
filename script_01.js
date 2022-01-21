@@ -43,10 +43,41 @@
 // }
 
 /* 02b. For-Schleife für Array-Index (Iteration)*/
-let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
-for (let i = 0; i < arr.length; i++) {
-output(arr[i]);
+// let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+// for (let i = 0; i < arr.length; i++) {
+// output(arr[i]);
+// }
+
+
+// Überlegung - Transponierung
+
+// einer Variablen kann Ihr eigener Wert zugewiesen werden. Solange die Variable existiert, bleibt dieser erhalten.
+// hier Aufsummierung
+
+
+// let a = 0; // Anfangswert
+// output("inhalt von a: " + a);
+// a = a + 1; // a = 0 + 1
+// output("inhalt von a: " + a);
+// a = a + 1; // a = 0 + 1
+// output("inhalt von a: " + a);
+// a = a + 1; // a = 0 + 1
+// output("inhalt von a: " + a);
+
+
+
+// besser mit FOR-Schleife
+let a = 0; // Anfangswert
+for (let i = 0; i <= 10; i++) 
+{
+    output("in der loop: " + a);
+    a = a + 1;
 }
+output("in der loop: " + a);
+
+
+
+
 
 
 
@@ -92,6 +123,21 @@ return str;
 
 }
 
+//Funktionalität mit Array 2
+// Transponierung: untereinander --> nebeneinander
+
+// output(getSentenceArr2(["Ich","bin","Maxine","Mütze"]));
+function getSentenceArr2(arr) {         
+
+    const gap = " ";
+    const punct = ".";
+
+for (let i = 0; i < arr.length; i++) {
+output(arr[i]);
+}
+return str;
+
+}
 
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
