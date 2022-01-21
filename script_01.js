@@ -77,16 +77,16 @@
 
 // 1 a
 
-let str = "";
-let gap = " ";
-let addStr = "Test";
-for (let i = 0; i <= 5; i++) 
-{
-    // output("in der loop: " + str);
-    // // a = a + 1;       //Numerik
-    str = str + "Test"  + gap    //Text
-}
-output("nach der loop: " + str);
+// let str = "";
+// let gap = " ";
+// let addStr = "Test";
+// for (let i = 0; i <= 5; i++) 
+// {
+//     // output("in der loop: " + str);
+//     // // a = a + 1;       //Numerik
+//     str = str + "Test"  + gap    //Text
+// }
+// output("nach der loop: " + str);
 
 
 // Funktionalität mit Einzelparametern
@@ -134,17 +134,37 @@ return str;
 //Funktionalität mit Array 2
 // Transponierung: untereinander --> nebeneinander
 
-// output(getSentenceArr2(["Ich","bin","Maxine","Mütze"]));
+output(getSentenceArr2(["Ich","bin","Maxine","Mütze"]));
+output(getSentenceArr2(["Ich","bin","Nadine","Kapütze"]));
+output(getSentenceArr2([]));
 function getSentenceArr2(arr) {         
 
     const gap = " ";
     const punct = ".";
+    let str = "";
+
+    if (arr.length == 0) {
+        return "xxx"
+    }
+
+
+
 
 for (let i = 0; i < arr.length; i++) {
-output(arr[i]);
+
+// wenn ich noch nicht das letzte element --gap
+//wenn ich das letzte element habe --punct
+// a = a + 1 || a += 1
+
+    if (i != arr.length -1) {   //punkt ist auf Platz -1 von hinten
+        str += arr[i] + gap;
+    } else {
+        str += arr[i] + punct;
+    }
+
+
 }
 return str;
-
 }
 
 // Modul: Ausgabe in Konsole : Test
