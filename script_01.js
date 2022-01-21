@@ -67,18 +67,26 @@
 
 
 // besser mit FOR-Schleife
-let a = 0; // Anfangswert
-for (let i = 0; i <= 10; i++) 
+// let a = 0; // Anfangswert
+// for (let i = 0; i <= 10; i++) 
+// {
+//     output("in der loop: " + a);
+//     a = a + 1;
+// }
+// output("in der loop: " + a);
+
+// 1 a
+
+let str = "";
+let gap = " ";
+let addStr = "Test";
+for (let i = 0; i <= 5; i++) 
 {
-    output("in der loop: " + a);
-    a = a + 1;
+    // output("in der loop: " + str);
+    // // a = a + 1;       //Numerik
+    str = str + "Test"  + gap    //Text
 }
-output("in der loop: " + a);
-
-
-
-
-
+output("nach der loop: " + str);
 
 
 // Funktionalität mit Einzelparametern
